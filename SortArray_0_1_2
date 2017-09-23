@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+	//code
+	int T = 0;
+	freopen("SortArray012.txt", "r", stdin);
+	scanf("%d", &T);
+	while (T--)
+	{
+		int N = 0;
+		int temp = 0;
+		int arr[3] = { 0 };
+		scanf("%d", &N);
+		while (N--)
+		{
+			scanf("%d", &temp);
+			arr[temp]++;
+		}
+		for (int i = 0; i<3; i++)
+		{
+			for (int j = 0; j<arr[i]; j++)
+			{
+				printf("%d ", i);
+			}
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
